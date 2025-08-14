@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="mule-cicd-demo-appFlow" doc:id="18d65e71-9234-407b-b9a9-27735f8b2370" >
+		<scheduler doc:name="Scheduler" doc:id="187d05f7-5a6c-47c5-ba66-1c10efb7048b" >
+			<scheduling-strategy >
+				<fixed-frequency />
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="START" doc:id="2b1fb490-6cd9-43b4-947c-8d726d172c01" message="Start of #[flow.name]"/>
+		<logger level="INFO" doc:name="END" doc:id="f79e146e-4f25-4d24-a9d3-f3b9cbfbd52c" message="End of #[flow.name]"/>
+	</flow>
+</mule>
