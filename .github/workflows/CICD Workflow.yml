@@ -59,7 +59,7 @@ jobs:
     - name: "Test with Maven"
       env:
         connectedAppId: ${{ secrets.connected_app_id }}
-        connectedAppSecret: ${{ secrets.connected_app_secret }
+        connectedAppSecret: ${{ secrets.connected_app_secret }}
       run: |
         if [ "${{ inputs.environment }}" == "DEV" ];
         then
