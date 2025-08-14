@@ -27,7 +27,7 @@ on:
         type: string
 
 # Display the commit message, environment, and project name in the run name for better traceability
-run-name: " Commit: ${{ inputs.commit }} | Environment: ${{ inputs.environment }} | maven-github-actions-app"
+run-name: " Commit: ${{ inputs.commit }} | Environment: ${{ inputs.environment }} | mulesoft-cicd-github-app"
 
 jobs:
   # Testing job
